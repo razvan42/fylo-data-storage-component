@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//  Creating variables.
+$primary-color: linear-gradient(
+  to right,
+  hsl(6, 100%, 80%),
+  hsl(335, 100%, 65%)
+);
+$link-color: hsl(228, 45%, 44%);
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+$main-font: "Raleway", sans-serif;
+
+// Using rems and correcting it for the association with pixels.
+html {
+  font-size: 62.5%;
+  font-family: $main-font;
+}
+
+// Working on positioning/ main-background.
+body {
+  background-color: $very-dark-blue;
+}
+.main-header {
+  height: 50vh;
+}
+.main-body {
+  height: 50vh;
+  color: $grayish-blue;
+  background-image: url(/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//working on the main-body/ creating the boxes.
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+// Working on the image-box
+.image-box {
+  width: 310px;
+  height: 180px;
+  background-color: $dark-blue;
+  transform: translate(0%, -45%);
+  border-radius: 1.5rem;
+  border-top-right-radius: 9rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 2.5rem;
+  & .images {
+    display: flex;
+  }
+}
+.logo {
+  margin-left: 1rem;
+}
+.logo img {
+  height: 28px;
+  width: 105px;
+}
+.image2,
+.image3,
+.image4 {
+  margin-left: 10px;
+  background-color: $very-dark-blue;
+  padding: 10px;
+  border-radius: 0.8rem;
+  width: 38px;
+  height: 36px;
+}
+
+// Working on the text-box
+.text-box {
+  background-color: $dark-blue;
+  border-radius: 1.5rem;
+  transform: translate(0%, -30%);
+  display: flex;
+  flex-direction: column;
+  width: 536.9px;
+  height: 142.4px;
+  padding: 20px;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 12px;
+  & .text-shape {
+    background-color: white;
+    color: $grayish-blue;
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translate(-10%, -100%);
+    width: 153.4px;
+    height: 56.96px;
+    border-radius: 0.8rem;
+    border-bottom-right-radius: 0%;
+    & b {
+      font-size: 3rem;
+      color: $very-dark-blue;
+    }
+  }
+}
+.first-line span {
+  border-left: 40px solid transparent;
+  border-right: 25px solid white;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 7%;
+  right: 6.5%;
+}
+
+.second-line {
+  display: flex;
+  height: 14.24px;
+  border: 0.2rem solid $very-dark-blue;
+  background-color: $very-dark-blue;
+  border-radius: 2rem;
+}
+.fill {
+  background-image: $primary-color;
+  width: 70%;
+  border-radius: 2rem;
+}
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  width: 10.738px;
+  transform: translate(-100%, 0%);
+}
+.third-line {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 876px) {
+  .main-body {
+    background: none;
+  }
+  body {
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .first-line span {
+    visibility: hidden;
+  }
+  .image-box {
+    width: 410px;
+    height: 180px;
+    margin-left: 30px;
+  }
+  .text-box {
+    width: 410px;
+    height: 180px;
+    position: relative;
+  }
+  .text-shape {
+    position: absolute;
+    top: 180px;
+    left: -90px;
+  }
+}

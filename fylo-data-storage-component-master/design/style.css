@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #0c122c;
+}
+
+.main-header {
+  height: 50vh;
+}
+
+.main-body {
+  height: 50vh;
+  color: #848794;
+  background-image: url(/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.image-box {
+  width: 310px;
+  height: 180px;
+  background-color: #1d2c67;
+  -webkit-transform: translate(0%, -45%);
+          transform: translate(0%, -45%);
+  border-radius: 1.5rem;
+  border-top-right-radius: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2.5rem;
+}
+
+.image-box .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 28px;
+  width: 105px;
+}
+
+.image2,
+.image3,
+.image4 {
+  margin-left: 10px;
+  background-color: #0c122c;
+  padding: 10px;
+  border-radius: 0.8rem;
+  width: 38px;
+  height: 36px;
+}
+
+.text-box {
+  background-color: #1d2c67;
+  border-radius: 1.5rem;
+  -webkit-transform: translate(0%, -30%);
+          transform: translate(0%, -30%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 536.9px;
+  height: 142.4px;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 30px;
+}
+
+.first-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.first-line .text-shape {
+  background-color: white;
+  color: #848794;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-10%, -100%);
+          transform: translate(-10%, -100%);
+  width: 153.4px;
+  height: 56.96px;
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 0%;
+}
+
+.first-line .text-shape b {
+  font-size: 3rem;
+  color: #0c122c;
+}
+
+.first-line span {
+  border-left: 40px solid transparent;
+  border-right: 25px solid white;
+  border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 7%;
+  right: 6.5%;
+}
+
+.second-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 14.24px;
+  border: 0.2rem solid #0c122c;
+  background-color: #0c122c;
+  border-radius: 2rem;
+}
+
+.fill {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  width: 70%;
+  border-radius: 2rem;
+}
+
+.dot {
+  background-color: white;
+  border-radius: 50%;
+  width: 10.738px;
+  -webkit-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+}
+
+.third-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 876px) {
+  .main-body {
+    background: none;
+  }
+  body {
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .first-line span {
+    visibility: hidden;
+  }
+  .image-box {
+    width: 410px;
+    height: 180px;
+    margin-left: 30px;
+  }
+  .text-box {
+    width: 410px;
+    height: 180px;
+    position: relative;
+  }
+  .text-shape {
+    position: absolute;
+    top: 180px;
+    left: -90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
